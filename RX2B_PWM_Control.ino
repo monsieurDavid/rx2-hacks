@@ -12,8 +12,9 @@
     RC toy car. 
     
     This has been tested an Arduino UNO r3
+    Demo: 
  
-    System variables:
+    Firmware variables:
       OCR1A: PWM Pin 9
       OCR1B: PWM Pin 10
       IRC1: the frequency handling register for Timer1
@@ -99,7 +100,7 @@ void setup() {
 
 
 void loop() {
-  //mode = FORWARD_TURBO;
+  //mode = TURBO;
   //trigger(mode);
 
   if (debug) {
@@ -120,7 +121,7 @@ void loop() {
     } else if (digitalRead(LEFT_BTN) == LOW && digitalRead(RIGHT_BTN) == HIGH) {
       mode = FORWARD_RIGHT;
     } else {
-      mode = FORWARD_TURBO;
+      mode = TURBO;
     }
   } else if (digitalRead(BWD_BTN) == HIGH) { //BACKWARD
     trigger_on = true;
