@@ -12,7 +12,7 @@
     RC toy car. 
     
     This has been tested an Arduino UNO r3
-    Demo: 
+    Demo: http://youtu.be/7js6pt2g0ac
  
     Firmware variables:
       OCR1A: PWM Pin 9
