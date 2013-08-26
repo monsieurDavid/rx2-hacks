@@ -14,7 +14,7 @@
     This has been tested an Arduino UNO r3
     Demo: http://youtu.be/7js6pt2g0ac
  
-    Firmware variables:
+    Firmware registers:
       OCR1A: PWM Pin 9
       OCR1B: PWM Pin 10
       IRC1: the frequency handling register for Timer1
@@ -74,8 +74,6 @@ boolean trigger_on = false;
 
 //interrupt
 unsigned long currentMillis  = 0;
-unsigned long previousMillis = 0;
-
 
 
 void setup() {
@@ -113,7 +111,8 @@ void loop() {
   }
 
   if (digitalRead(OFF_BTN) == HIGH) { //TURN OFF
-    trigger_on = false;    
+    trigger(ENDCODE);
+    trigger_on = false;   
   } else if (digitalRead(FWD_BTN) == HIGH) { //FORWARD
     trigger_on = true;
     if (digitalRead(LEFT_BTN) == HIGH && digitalRead(RIGHT_BTN) == LOW) {
@@ -121,7 +120,7 @@ void loop() {
     } else if (digitalRead(LEFT_BTN) == LOW && digitalRead(RIGHT_BTN) == HIGH) {
       mode = FORWARD_RIGHT;
     } else {
-      mode = TURBO;
+      mode = FORWARD;
     }
   } else if (digitalRead(BWD_BTN) == HIGH) { //BACKWARD
     trigger_on = true;
