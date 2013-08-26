@@ -1,7 +1,7 @@
 /*
     RX2B PWM Control via via Arduino
  
-    Written by David Bernier
+    Written by David Bernier, Aug. 26, 2013
     https://github.com/monsieurDavid/
     GPL v3 License
      
