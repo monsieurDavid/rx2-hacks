@@ -1,5 +1,5 @@
 /*
-    RX2B PWM Control via via Arduino
+    Realtek RX2 (RX2B) PWM Control via via Arduino
  
     Written by David Bernier, Aug. 26, 2013
     https://github.com/monsieurDavid/
@@ -8,8 +8,8 @@
     PWM variable frequency code from:
     http://www.oxgadgets.com/2011/04/creating-variable-frequency-pwm-output.html
 
-    What follows is a hack to send two different pulse trains to a RX2B-driven
-    RC toy car. 
+    This is a hack to send two different pulse trains to a RX2-driven
+    RC toy car by an Arduino.
     
     This has been tested an Arduino UNO r3
     Demo: http://youtu.be/7js6pt2g0ac
