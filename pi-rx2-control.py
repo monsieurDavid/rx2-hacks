@@ -91,12 +91,11 @@ def run():
             else:
                 mode = BACKWARD
         elif (wiringpi2.digitalRead(LEFT_BTN) == wiringpi2.GPIO.HIGH and wiringpi2.digitalRead(RIGHT_BTN) == wiringpi2.GPIO.LOW):
-                triggerOn = False # only once
-                #while (wiringpi2.digitalRead(OFF_BTN) == wiringpi2.GPIO.LOW):
-                trigger(LEFT)
+                triggerOn = True
+                mode = LEFT
         elif (wiringpi2.digitalRead(LEFT_BTN) == wiringpi2.GPIO.LOW and wiringpi2.digitalRead(RIGHT_BTN) == wiringpi2.GPIO.HIGH):
-                triggerOn = False # only once
-                trigger(RIGHT)
+                triggerOn = True
+                mode = RIGHT
         
         if (debug == True):
             print "trigger: " + str(triggerOn) + "; mode: " + str(mode)  
