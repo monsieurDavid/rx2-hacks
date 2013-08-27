@@ -87,7 +87,7 @@ def run():
             if (wiringpi2.digitalRead(LEFT_BTN) == wiringpi2.GPIO.HIGH and wiringpi2.digitalRead(RIGHT_BTN) == wiringpi2.GPIO.LOW):
                 mode = BACKWARD_LEFT
             elif (wiringpi2.digitalRead(LEFT_BTN) == wiringpi2.GPIO.LOW and wiringpi2.digitalRead(RIGHT_BTN) == wiringpi2.GPIO.HIGH):
-                mode = BACKARD_RIGHT
+                mode = BACKWARD_RIGHT
             else:
                 mode = BACKWARD
         elif (wiringpi2.digitalRead(LEFT_BTN) == wiringpi2.GPIO.HIGH and wiringpi2.digitalRead(RIGHT_BTN) == wiringpi2.GPIO.LOW):
