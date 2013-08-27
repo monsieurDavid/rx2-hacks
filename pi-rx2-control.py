@@ -31,15 +31,15 @@ wiringpi2.wiringPiSetupGpio()
 
 #pins assignment
     #output
-ANTENNA     = 17 # wiringpi  0
-STATUS_LED  = 27 #           2 
+ANTENNA     =  7 # wiringpi  7 "CE1"
+STATUS_LED  =  8 #          10 "CE0" 
 
     #input
-LEFT_BTN    = 22 #           3
-BWD_BTN     = 10 #          12 "MOSI"
-FWD_BTN     =  9 #          13 "MISO"
-RIGHT_BTN   = 11 #          14 "SCLK"
-OFF_BTN     =  7 #           7 "CE1"
+LEFT_BTN    = 11 #          14 "SCLK"
+BWD_BTN     =  9 #          13 "MISO"
+FWD_BTN     = 10 #          12 "MOSI"
+RIGHT_BTN   = 22 #           3
+OFF_BTN     = 17 #           0
 
 wiringpi2.pinMode(ANTENNA, wiringpi2.GPIO.OUTPUT) 
 wiringpi2.pinMode(STATUS_LED, wiringpi2.GPIO.OUTPUT) 
