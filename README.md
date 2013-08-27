@@ -1,5 +1,5 @@
-rx2b-hacks
-==========
+rx2 hacks
+=========
 
 Fun with Realtek RX2 (RX2B) driven remote controlled toys.
 
